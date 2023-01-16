@@ -1,0 +1,37 @@
+<div class="container" *ngIf="profile">
+    <div class="row">
+        <div class="form">
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nameProfile">Nombre y apellido</label>
+                    <input type="text" class="form-control" id="nameProfile" name="nameProfile" [(ngModel)]="profile.nameProfile" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descriptionProfile">Descripcion</label>
+                    <input type="text" class="form-control" id="descriptionProfile" name="descriptionProfile" [(ngModel)]="profile.descriptionProfile" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="locationProfile">Locacion</label>
+                    <input type="text" class="form-control" id="locationProfile" name="locationProfile" [(ngModel)]="profile.locationProfile" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pictureProfile">Foto de Perfil</label>
+                    <input type="text" class="form-control" id="pictureProfile" name="pictureProfile" [(ngModel)]="profile.pictureProfile" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bannerProfile">Banner</label>
+                    <input type="text" class="form-control" id="bannerProfile" name="bannerProfile" [(ngModel)]="profile.bannerProfile" required>
+                </div>
+                
+                <button class="btn btn-primary">
+                    Modificar Perfil
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+ 

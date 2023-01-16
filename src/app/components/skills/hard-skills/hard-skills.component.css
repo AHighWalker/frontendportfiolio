@@ -1,0 +1,38 @@
+.hardSkills{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1em;
+    height: fit-content;
+    border: 1px solid white;
+}
+
+.title{
+    margin-top: 1.6em;
+    margin-left: 2em;
+}
+
+.editor{
+    height: 2em;
+    width: 2em;
+}
+
+.add{
+    position: absolute !important;
+    right: 0px;
+    margin-top: 1.6em;
+    margin-right: 0.8em;
+}
+
+
+.row{
+    background-color: #a1b5cb;
+    padding: 20px;
+}
+
+.circulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

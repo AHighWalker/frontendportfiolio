@@ -1,0 +1,38 @@
+<div class="projects">
+    <div class="title">
+        <h2>Projectos</h2>
+    </div>
+    <div class="add">
+        <img class="editor" src="../../../assets/images/add.png" routerLink="/newproject" *ngIf="isAdmin">
+    </div>
+    <div class="wrapper">
+
+        <div *ngFor="let item of projects" class="cards">
+            <mat-card class="card">
+                <mat-card-header>
+                    <div class="card-title">
+                        <mat-card-title>{{item.titleProject}}</mat-card-title>
+                    </div>
+                    <div class="tools">
+                        <img class="editor" src="../../../assets/images/edit.png"
+                            routerLink="/editproject/{{item.idProject}}" *ngIf="isAdmin">
+                        <img class="editor" src="../../../assets/images/delete.png" (click)="delete(item.idProject)"
+                            *ngIf="isAdmin">
+                    </div>
+                </mat-card-header>
+                <mat-card-content>
+                    <img class="img-fluid" src="{{item.pictureProject}}">
+                    <div class="card-description">
+                        <h3>
+                            {{item.descriptionProject}}
+                        </h3>
+                        <a href="{{item.linkProject}}">
+                            <h3>{{item.linkProject}}</h3>
+                        </a>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="header">
+    <div>
+        <img src="../../../assets/images/arg-prog.png" class="arg-logo">
+    </div>
+    <div class="login">
+        <a href="https://github.com/AHighWalker"><img src="../../../assets/images/github-black.png" class="logo"></a>
+        <a href="https://www.linkedin.com/in/lucas-rubiolo-265528262/"><img src="../../../assets/images/linkedin-black.png" class="logo"></a>    
+    <button type="button" class="btn btn-primary" (click)="login()" *ngIf="!isLogged">
+        LogIn
+    </button>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="onLogOut()" *ngIf="isLogged">
+        LogOut
+    </button>
+</div>

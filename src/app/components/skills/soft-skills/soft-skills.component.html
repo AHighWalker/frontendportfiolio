@@ -1,0 +1,37 @@
+<div class="softSkills">
+    <div class="title">
+        <h2>Habilidades Blandas</h2>
+    </div>
+    <div class="add">
+        <img class="editor" src="../../../assets/images/add.png" routerLink="/newsoftskill" *ngIf="isAdmin">
+    </div>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4" *ngFor="let item of softSkills">
+        <circle-progress
+            [percent]="(item.percentageSS)"
+            [radius]="90" [imageSrc]="(item.pictureSS)"
+            [title]="(item.titleSS)"
+            [titleColor]="'#212F3C'"
+            [showTitle]="true"
+            [showImage]="false"
+            [imageHeight]="70"
+            [imageWidth]="70"
+            [showUnits]="false"
+            [showSubtitle]="false"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="2"
+            [outerStrokeColor]="'#78C000'"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="600"
+>       </circle-progress>
+
+        <div class="tools">
+            <img class="editor" src="../../../assets/images/edit.png"
+                routerLink="/editsoftskill/{{item.idSS}}" *ngIf="isAdmin">
+            <img class="editor" src="../../../assets/images/delete.png" (click)="delete(item.idSS)"
+                *ngIf="isAdmin">
+        </div>
+
+            
+    </div>
+</div>

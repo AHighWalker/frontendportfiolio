@@ -1,0 +1,36 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 2em;
+    position: relative;
+    border: 3px solid white;
+    height: 12em;
+}
+
+.editor{
+    height: 2em;
+    width: 2em;
+}
+
+.tools{
+    position: absolute !important;
+    right: 0px;
+    bottom: 0px;
+}
+
+.editor{
+    height: 2em;
+    width: 2em;
+    margin-right: 0.8em;
+}
+
+.title{
+    margin-top: 1.6em;
+    margin-left: 2em;
+}
+
+.description{
+    margin-left: 3em;
+}

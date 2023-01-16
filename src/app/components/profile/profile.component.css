@@ -1,0 +1,65 @@
+.profile{
+    display: flex;
+    height: 27em;
+    width: 98%;
+    flex-direction: column;
+    margin-top: 4.5em;
+    margin:0 auto;
+    position: relative !important;
+    border: 3px solid white;
+}
+
+#banner{
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to bottom , rgb(188, 149, 209), rgb(244, 232, 248));
+    height: 30em;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+#profile-image{
+    display: flex;
+    justify-content: center;
+    height: 14em;
+    width: 14em;
+    position: absolute;
+    bottom:-1.7em;
+    border-radius:100%;
+    border: 5px solid white;
+}
+
+#description{
+    background-color: rgb(244, 232, 248);
+    width: 100%;
+}
+
+img{
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.editor{
+    height: 2em;
+    width: 2em;
+    margin-right: 0.8em;
+}
+
+.tools{
+position: absolute !important;
+right: 0px;
+bottom: 0px;
+}
+
+.name{
+    margin-top: 1.6em;
+    margin-left: 2em;
+}
+
+.description{
+    margin-left: 3em;
+}

@@ -1,0 +1,36 @@
+.softSkills{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1em;
+    height: fit-content;
+}
+
+.title{
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.editor{
+    height: 2em;
+    width: 2em;
+}
+
+.row{
+    background-color: #a1b5cb;
+    padding: 20px;
+}
+
+.circulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add{
+    position: absolute !important;
+    right: 0px;
+    margin-top: 1.6em;
+    margin-right: 0.8em;
+}

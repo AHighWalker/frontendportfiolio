@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="form">
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+
+                <div class="form-group">
+                    <label for="titleEdu">Dombre de la Educacion:</label>
+                    <input type="text" class="form-control" id="titleEdu" name="titleEdu" [(ngModel)]="titleEdu" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descriptionEdu">Descripcion:</label>
+                    <input type="text" class="form-control" id="descriptionEdu" name="descriptionEdu" [(ngModel)]="descriptionEdu" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dateEdu">Año:</label>
+                    <input type="text" class="form-control" id="dateEdu" name="dateEdu" [(ngModel)]="dateEdu" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pictureEdu">Imagen</label>
+                    <input type="text" class="form-control" id="pictureEdu" name="pictureEdu" [(ngModel)]="pictureEdu" required>
+                </div>
+
+                <button class="btn btn-primary">
+                    Agregar educacion
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="education">
+    <div class="title">
+        <h2>Educacion</h2>
+    </div>
+    <div class="add">
+        <img class="editor" src="../../../assets/images/add.png" routerLink="/neweducation" *ngIf="isAdmin">
+    </div>
+    <div class="wrapper">
+
+        <div *ngFor="let item of education" class="cards">
+            <mat-card class="card">
+                <mat-card-header>
+                    <div mat-card-avatar class="header-image" style="background-image: url('{{item.pictureEdu}}');">
+                    </div>
+                    <div class="card-title">
+                        <mat-card-title>{{item.titleEdu}}</mat-card-title>
+                    </div>
+                    <div class="tools">
+                        <img class="editor" src="../../../assets/images/edit.png"
+                            routerLink="/editeducation/{{item.idEdu}}" *ngIf="isAdmin">
+                        <img class="editor" src="../../../assets/images/delete.png" (click)="delete(item.idEdu)"
+                            *ngIf="isAdmin">
+                    </div>
+                </mat-card-header>
+                <mat-card-content>
+                    <h3>
+                        {{item.descriptionEdu}}
+                    </h3>
+                    <h3>
+                        {{item.dateEdu}}
+                    </h3>
+
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+    </div>
+</div>

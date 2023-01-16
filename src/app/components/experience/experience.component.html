@@ -1,0 +1,37 @@
+<div class="experience">
+    <div class="title">
+        <h2>Experiencia</h2>
+    </div>
+
+    <div class="add">
+        <img class="editor" src="../../../assets/images/add.png" routerLink="/newexperience" *ngIf="isAdmin">
+    </div>
+    <div class="wrapper">
+
+        <div *ngFor="let itemExp of experience" class="cards">
+
+            <mat-card class="card">
+                <mat-card-header>
+                    <div mat-card-avatar class="header-image" style="background-image: url('{{itemExp.pictureExp}}')">
+                    </div>
+                    <div class="card-title">
+                        <mat-card-title>{{itemExp.titleExp}}</mat-card-title>
+                    </div>
+                    <div class="tools">
+                        <img class="editor" src="../../../assets/images/edit.png"
+                            routerLink="/editexperience/{{itemExp.idExp}}" *ngIf="isAdmin">
+                        <img class="editor" src="../../../assets/images/delete.png" (click)="delete(itemExp.idExp)"
+                            *ngIf="isAdmin">
+                    </div>
+                </mat-card-header>
+                <mat-card-content>
+                    <h3>{{itemExp.descriptionExp}}</h3>
+                    <h3>{{itemExp.sinceExp}}-{{itemExp.untilExp}}</h3>
+                    <h3>{{itemExp.locationExp}}</h3>
+                </mat-card-content>
+            </mat-card>
+
+        </div>
+
+    </div>
+</div>

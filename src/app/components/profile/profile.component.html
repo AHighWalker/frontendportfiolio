@@ -1,0 +1,21 @@
+<div class="profile">
+        <div id="banner" style="background-image: url('{{profile.bannerProfile}}');">
+            <div class="row" id="profile-image">
+                <img src="{{profile.pictureProfile}}"  alt="profile-image">
+            </div>
+            
+        </div>
+        <div class="name">
+            <h1>{{profile.nameProfile}}</h1>
+        </div>
+        <div class="description">
+            <p>{{profile.descriptionProfile}}</p>
+            <p>{{profile.locationProfile}}</p>
+        </div>
+        <div class="tools">
+            <img class="editor" src="../../../assets/images/edit.png"
+                routerLink="/editprofile/{{profile.idProfile}}" *ngIf="isAdmin">
+            <img class="editor" src="../../../assets/images/delete.png" (click)="delete(profile.idProfile)"
+                *ngIf="isAdmin">
+        </div>
+</div>

@@ -1,0 +1,11 @@
+.container,.card,.form-outline,.col-12,.row{
+    background-color: rgba(97, 160, 212, 0) !important;
+}
+
+.card-body{
+    background-color: rgb(94, 115, 182) !important;
+}
+
+h2{
+    margin-top: 2em;
+}

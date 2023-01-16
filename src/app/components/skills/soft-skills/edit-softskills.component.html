@@ -1,0 +1,27 @@
+<div class="container" *ngIf="softSkill">
+    <div class="row">
+        <div class="form">
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+
+                <div class="form-group">
+                    <label for="titleSS">Nombre de la habilidad:</label>
+                    <input type="text" class="form-control" id="titleSS" name="titleSS" [(ngModel)]="softSkill.titleSS" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="percentageSS">Dominio:</label>
+                    <input type="range" id="percentageSS" name="percentageSS" min="0" max="100" [(ngModel)]="softSkill.percentageSS" value="50">
+                </div>
+
+                <div class="form-group">
+                    <label for="pictureSS">Imagen:</label>
+                    <input type="text" class="form-control" id="pictureSS" name="pictureSS" [(ngModel)]="softSkill.pictureSS" required>
+                </div>
+
+                <button class="btn btn-primary">
+                    Modificar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

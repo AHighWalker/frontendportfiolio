@@ -1,0 +1,14 @@
+<div class="about">
+    <div class="title">
+        <h2>Sobre mi</h2>
+    </div>
+    <div class="description">
+        <p>{{about.descriptionAbout}}</p>
+    </div>
+    <div class="tools">
+        <img class="editor" src="../../../assets/images/edit.png"
+            routerLink="/editabout/{{about.idAbout}}" *ngIf="isAdmin">
+        <img class="editor" src="../../../assets/images/delete.png" (click)="delete(about.idAbout)"
+            *ngIf="isAdmin">
+    </div>
+</div>

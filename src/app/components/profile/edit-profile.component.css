@@ -1,0 +1,17 @@
+.form{
+    padding:1em;
+    align-items: center;
+}
+body{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.container{
+    margin-top: 10em;
+    position: absolute;
+    width: 80%;
+    position: relative;
+    border: 3px solid white;
+
+}

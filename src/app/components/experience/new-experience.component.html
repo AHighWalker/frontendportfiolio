@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="form">
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+
+                <div class="form-group">
+                    <label for="titleExp">nombre de la empresa:</label>
+                    <input type="text" class="form-control" id="titleExp" name="titleExp" [(ngModel)]="titleExp" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descriptionExp">descripcion del puesto:</label>
+                    <input type="text" class="form-control" id="descriptionExp" name="descriptionExp" [(ngModel)]="descriptionExp" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="sinceExp">desde:</label>
+                    <input type="text" class="form-control" id="sincexp" name="sinceExp" [(ngModel)]="sinceExp" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="untilExp">hasta:</label>
+                    <input type="text" class="form-control" id="untilExp" name="untilExp" [(ngModel)]="untilExp" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pictureExp">imagen:</label>
+                    <input type="text" class="form-control" id="pictureExp" name="pictureExp" [(ngModel)]="pictureExp" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="locationExp">locacion:</label>
+                    <input type="text" class="form-control" id="locationExp" name="locationExp" [(ngModel)]="locationExp" required>
+                </div>
+
+                <button class="btn btn-primary">
+                    Agregar experiencia
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

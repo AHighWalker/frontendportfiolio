@@ -1,0 +1,34 @@
+div{
+    background-color: rgba(247, 247, 247, 0) !important;
+    width: 100% !important;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between !important;
+    height: 4em;
+    background-image: linear-gradient(to bottom , rgb(188, 149, 209), rgba(20, 43, 92));
+    position: fixed auto;
+    align-items: center;
+}
+
+img{
+    height: 3em;
+}
+
+button{
+    margin-right: 1.2em;
+}
+
+.login{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo{
+    margin-right: 0.8em;
+}
+.arg-logo{
+    margin-left: 1.2em;
+}
